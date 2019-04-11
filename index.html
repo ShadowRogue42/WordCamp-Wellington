@@ -391,13 +391,132 @@
 					</div>
 
 					<div class="modal-body">
-						...
+						
+						<div class="alert alert-secondary alert-dismissible fade show" role="alert">
+							<strong>Hurry!</strong> Early bird registration ends in two days.
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						
+						<form>
+							<div class="border-bottom border-light pb-4 mb-4">
+								
+								<h5>Basic Info</h5>
+								
+								<div class="form-group">
+									<label for="fullName">Name:</label>
+									<input type="text" class="form-control" id="fullName" placeholder="Enter Your Name">
+								</div>
+								
+								<div class="form-group">
+									<label for="emailAddress">Email:</label>
+									<input type="text" class="form-control" id="emailAddress" placeholder="Enter Your Email">
+								</div>
+								
+								<label for="jobRole">Job Role:</label>
+								<select class="custom-select" id="jobRole">
+									<option selected>Select your Job role</option>
+									<option value="1">Web Design</option>
+									<option value="2">Front End Developer</option>
+									<option value="3">Back End Developer</option>
+									<option value="4">Content Creator</option>
+									<option value="5">Management</option>
+								</select>
+								
+							</div>
+							
+							<div class="border-bottom border-light pb-4 mb-4">
+								
+								<h5>Which Topic Interest You Most?</h5>
+								
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">WordPress Plugins</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">PHP</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									<label class="form-check-label" for="defaultCheck1">CSS and Javascript</label>
+								</div>
+								
+							</div>
+							
+							<div>
+								
+								<h5>Payment Info</h5>
+								
+								<div class="form-row">
+									
+									<div class="form-group col-md-6">
+										<label for="cardNumber">Card Number:</label>
+										<input type="cardNumber" class="form-control" id="cardNumber">
+									</div>
+									
+									<div class="form-group col-md-3">
+										<label for="inputZip">Zip Code:</label>
+										<input type="zipCode" class="form-control" id="inputZip">
+									</div>
+									
+									<div class="form-group col-md-2">
+										<label for="inputCVV">CVV:</label>
+										<input type="cvv" class="form-control" id="inputCVV">
+									</div>
+									
+								</div>
+								
+								<label for="expirationDate">Expiration Date:</label>
+								
+								<div id="expirationDate" class="form-row">
+									
+									<div class="form-group col-md-7">
+										<select class="form-control">
+											<option selected>00 - Month</option>
+											<option>01 - January</option>
+											<option>02 - February</option>
+											<option>03 - March</option>
+											<option>04 - April</option>
+											<option>05 - May</option>
+											<option>06 - June</option>
+											<option>07 - July</option>
+											<option>08 - August</option>
+											<option>09 - September</option>
+											<option>10 - October</option>
+											<option>11 - November</option>
+											<option>12 - December</option>
+										</select>
+									</div>
+									
+									<div class="form-group col-md-4">
+										<select class="form-control">
+											<option selected>YYYY</option>
+											<option>2019</option>
+											<option>2020</option>
+											<option>2021</option>
+											<option>2022</option>
+											<option>2023</option>
+											<option>2024</option>
+											<option>2025</option>
+											<option>2026</option>
+											<option>2027</option>
+											<option>2028</option>
+										</select>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+						</form>
+						
 					</div>
 
 					<div class="modal-footer">
 
-						<button type="button" class="btn btn-light text-dark" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-success">Save changes</button>
+						<button type="submit" class="btn btn-light text-dark" data-dismiss="modal">Register</button>
 
 					</div>
 
