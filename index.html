@@ -7,6 +7,10 @@
 		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="style.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
 
 		<title>WordCamp Wellington</title>
 	
@@ -49,7 +53,7 @@
 		
 		<!-- Jumbotron -->
 		
-		<div class="jumbotron jumbotron-fluid bg-secondary text-white">
+		<div id="jtron" class="jumbotron jumbotron-fluid text-white">
 			
 			<div class="container text-sm-center pt-5">
 				
@@ -72,24 +76,19 @@
 		
 		
 		<div class="container-fluid">
-		
-			<!--<div class="text-center bg-light">
-			
-				<div class="p-5 mb-2 bg-secondary text-white border border-dark rounded-bottom shadow">
-				
-					<h1 class="display-1 p-5">WordCamp Wellington</h1>
-				
-				</div>-->
 			
 			
 			<!-- About -->
+			
+			<div class="light py-4">
+			
 				<div class="row pt-4" id="about">
 					
 				<!--1 of 3: About WordCamp-->
 					
 					<div class="col-lg order-lg-2 p-5">
 
-						<h3 class="mb-4">About WordCamp</h3>
+						<h3 class="mb-4 text-center"><u>About WordCamp</u></h3>
 					
 						<img class="img-fluid rounded border border-dark" src="wellington.jpg" alt="Photo of Wellington, New Zealand">
 					
@@ -103,9 +102,9 @@
 					
 					<div class="col-lg order-lg-1 p-5">
 					
-						<h3 class="mb-4">Expert Speakers</h3>
+						<h3 class="mb-4 text-center"><u>Expert Speakers</u></h3>
 					
-						<p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets</p>
+						<p><strong><em>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets!</em></strong></p>
 					
 						<p>Want to meet the international WordPress community and share skills with some of the world's top experts and makers? Be the first to know what to expect for the future of WordPress.</p>
 					
@@ -117,7 +116,7 @@
 					
 					<div class="col-lg order-3 p-5">
 					
-						<h3 class="mb-4">What You'll Learn</h3>
+						<h3 class="mb-4 text-center"><u>What You'll Learn</u></h3>
 					
 						<div class="list-group">
 							<a href="#" class="list-group-item list-group-item-action"><strong>WordPress 5</strong>: New Gutenberg editor</a>
@@ -131,12 +130,16 @@
 					</div>
 				
 				</div>
+				
+				</div>
 			
 			<!-- Speakers -->
 			
-				<h1 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h1>
+<!--			<div class="dark">
+				
+				<h1 id="speakers">Speakers</h1>
 			
-				<div class="row">
+				<div class="row p-5">
 					
 					<div class="col-md-6 col-lg-4">
 						
@@ -223,79 +226,173 @@
 					</div>
 					
 				</div>
+				
+				
+				</div>
+-->			
+			
+			<div class="dark">
+				
+				<h1 id="speakers">Speakers</h1>
+				
+				<div class="bd-example">
+					<div id="carousel" class="carousel slide carousel carousel-fade" data-ride="carousel">
+						
+						<div class="carousel-inner">
+							
+							<div class="carousel-item active" data-interval="8000">
+								<img src="Nathaniel.jpg" class="d-block w-100" alt="Nathaniel Lowe">
+							
+								<div class="carousel-caption d-none d-md-block bright">
+									<h4>Nathaniel Lowe</h4>
+									<p>Nathaniel has 18 years of web development and design experience, and has worked with some of the world's leading technology companies such as PayPal, Zillow and others in expanding their web out reach.</p>
+								</div>
+							</div>
+							
+							<div class="carousel-item" data-interval="8000">
+								<img src="Mei.jpg" class="d-block w-100" alt="Xuan Mei">
+							
+								<div class="carousel-caption d-none d-md-block bright">
+									<h4>Xuan Mei</h4>
+									<p>Mei is a Stanford graduate, she started working with code at a young age and has created some the some of the most popular wordpress plugin for ecommerce with enfaces on Asia.</p>
+								</div>
+							</div>
+							
+							<div class="carousel-item" data-interval="8000">
+								<img src="Ludvig.jpg" class="d-block w-100" alt="Ludvig Steffensen">
+							
+								<div class="carousel-caption d-none d-md-block sadow">
+									<h4>Ludvig Steffensen</h4>
+									<p>With 30 years of software engineering experience, with 20 years of his experience being from his time in the military, Ludvig has worked with many great companies on many projects.</p>
+								</div>
+							</div>
+							
+							<div class="carousel-item" data-interval="8000">
+								<img src="Linda.jpg" class="d-block w-100" alt="Linda Forslund">
+							
+								<div class="carousel-caption d-none d-md-block sadow">
+									<h4>Linda Forslund</h4>
+									<p>Linda strated working in customer service, and over 28 years has gained numerous degrees, experiance, and respect that has allowed her to achieve opporunities in communication roles which has helped her rise as an executive leader at Wordpress.</p>
+								</div>
+							</div>
+							
+							<div class="carousel-item" data-interval="8000">
+								<img src="Asher.jpg" class="d-block w-100" alt="Asher Ewart">
+							
+								<div class="carousel-caption d-none d-md-block sadow">
+									<h4>Asher Ewart</h4>
+									<p>Asher is a leader of Wordpress Asia sales group, growing the sale department from 5 million to over 25 million in sales in the last 7 years, and has previously worked with Apple and Google.</p>
+								</div>
+							</div>
+							
+							<div class="carousel-item" data-interval="8000">
+								<img src="Valentina.jpg" class="d-block w-100" alt="Ludvig Valentina Siciliano">
+							
+								<div class="carousel-caption d-none d-md-block sadow">
+									<h4>Valentina Siciliano</h4>
+									<p>Valentina recently joined the Wordpress from Argentina bringing a wealth of experience, as digital writer and editor she’s was lead editor in the largest magazine and newspaper in her native country.</p>
+								</div>
+							</div>
+							
+						</div>
+						
+						<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						
+						<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					
+					</div>
+				
+				</div>
+			
+			
+			</div>
 			
 			<!-- Schedule -->
 			
-				<h1 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h1>
+			<div class="light pb-3">
 			
-				<ul class="list-group">
+				<h1 id="schedule">Schedule</h1>
+			
+				<ul class="list-group p-4">
 					
-					<li class="list-group-item bg-secondary text-light mb-1">
+					<li class="list-group-item bg-dark text-light mb-1">
 						<div class="d-flex justify-content-between">
 							<h5 class="mb-1 ml-5 pl-4">Keynote: WordPress 5.0</h5>
 							<span class="badge badge-pill badge-light p-2 mr-5">9:00am</span>
 						</div>
-						<p class="mb-1 ml-5 pl-5">Ludvig Steffensen</p>
+						<p class="mb-1 ml-5 pl-5"><em>Ludvig Steffensen</em></p>
 					</li>
 					
-					<li class="list-group-item bg-secondary text-light mb-1">
+					<li class="list-group-item bg-light text-dark mb-1">
 						<div class="d-flex justify-content-between">
 							<h5 class="mb-1 ml-5 pl-4">WooCommerce Basics</h5>
-							<span class="badge badge-pill badge-light p-2 mr-5">9:30am</span>
+							<span class="badge badge-pill badge-dark p-2 mr-5">9:30am</span>
 						</div>
-						<p class="mb-1 ml-5 pl-5">Asher Ewart</p>
+						<p class="mb-1 ml-5 pl-5"><em>Asher Ewart</em></p>
 					</li>
 					
-					<li class="list-group-item bg-secondary text-light mb-1">
+					<li class="list-group-item bg-dark text-light mb-1">
 						<div class="d-flex justify-content-between">
 							<h5 class="mb-1 ml-5 pl-4">WPEngine & Flywheel</h5>
 							<span class="badge badge-pill badge-light p-2 mr-5">11:00am</span>
 						</div>
-						<p class="mb-1 ml-5 pl-5">Linda Forslund</p>
+						<p class="mb-1 ml-5 pl-5"><em>Linda Forslund</em></p>
 					</li>
 					
-					<li class="list-group-item bg-secondary text-light mb-1">
+					<li class="list-group-item bg-light text-dark mb-1">
 						<div class="d-flex justify-content-between my-3">
 							<h5 class="mb-1 ml-5 pl-4">Lunch</h5>
-							<span class="badge badge-pill badge-light p-2 mr-5">12:00pm</span>
+							<span class="badge badge-pill badge-dark p-2 mr-5">12:00pm</span>
 						</div>
 					</li>
 					
-					<li class="list-group-item bg-secondary text-light mb-1">
+					<li class="list-group-item bg-dark text-light mb-1">
 						<div class="d-flex justify-content-between">
 							<h5 class="mb-1 ml-5 pl-4">Creating your Theme</h5>
 							<span class="badge badge-pill badge-light p-2 mr-5">2:00pm</span>
 						</div>
-						<p class="mb-1 ml-5 pl-5">Nathaniel Lowe</p>
+						<p class="mb-1 ml-5 pl-5"><em>Nathaniel Lowe</em></p>
 					</li>
 					
-					<li class="list-group-item bg-secondary text-light mb-1">
+					<li class="list-group-item bg-light text-dark mb-1">
 						<div class="d-flex justify-content-between">
 							<h5 class="mb-1 ml-5 pl-4">Developing a Plugin</h5>
-							<span class="badge badge-pill badge-light p-2 mr-5">3:00pm</span>
+							<span class="badge badge-pill badge-dark p-2 mr-5">3:00pm</span>
 						</div>
-						<p class="mb-1 ml-5 pl-5">Xuan Mei</p>
+						<p class="mb-1 ml-5 pl-5"><em>Xuan Mei</em></p>
 					</li>
 					
-					<li class="list-group-item bg-secondary text-light">
+					<li class="list-group-item bg-dark text-light">
 						<div class="d-flex justify-content-between">
 							<h5 class="mb-1 ml-5 pl-4">Creating great Content and Podcasts</h5>
 							<span class="badge badge-pill badge-light p-2 mr-5">5:00pm</span>
 						</div>
-						<p class="mb-1 ml-5 pl-5">Valentina Siciliano</p>
+						<p class="mb-1 ml-5 pl-5"><em>Valentina Siciliano</em></p>
 					</li>
 					
 				</ul>
 			
 			
+			
 			<!-- callout button -->
 			
-			<button data-toggle="modal" data-target="#register" type="button" class="btn btn-secondary btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now</button>
+			<button data-toggle="modal" data-target="#register" type="button" class="btn btn-light btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now</button>
+				
+			</div>
+				
+				
 			
 			<!-- signup form -->
 			
-				<hr>
-				<div class="row py-4 text-muted">
+			<div class="dark py-5">
+			
+				<div class="row py-4 px-5 text-muted">
 				
 					<div class="col-md col-xl-5">
 					
@@ -324,34 +421,32 @@
 					</div>
 			
 				</div>
-				<hr>
+
+			</div>
+				
 			
 			<!-- footer -->
-			<div class="row py-3 bg-secondary">
+			<div class="row py-3 bg-dark">
 				
 				<div class="col-md-7">
 					
 					<ul class="nav">
 						
 						<li class="nav-item">
-							<a class="nav-link text-light" href="#">Community</a>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#">Tracks</a>
+							<a class="nav-link text-light" href="#home"><strong>Home</strong></a>
 						</li>
 						
 						<li class="nav-item">
 							<div class="dropdown">
 								
-								<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Dropdown button
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Page Sections
 								</button>
 								
 								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#about">About</a>
+									<a class="dropdown-item" href="#speakers">Speakers</a>
+									<a class="dropdown-item" href="#schedule">Schedule</a>
 								</div>
 								
 							</div>
